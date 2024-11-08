@@ -1,0 +1,86 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    /*box_sizing: bordr-box;*/
+}
+body{
+    font-family: Arial, sans-serif;
+    background-color: #1b1b1b;
+    color: #fff;
+    margin: 0; /*Esto elimina cualquier margen que haya dentro del body*/
+}
+header{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: black;
+    position:sticky;
+}
+header img{
+    height: 50px;
+    margin-right: 1rem;
+}
+header h1{
+    color: #e4b400;
+    margin: 0;
+    flex: 1; /*El flex hace que el titulo rellene todo el espacio que le falte*/
+}
+nav{
+    margin-left: auto;
+}
+nav a{
+    color: white;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem; /*Esto es lo que decide el espacio entre los menus de indice, personaje y productos*/
+    background-color: #333;
+    border-radius: 5px;
+}
+nav a:hover, nav a.active{
+    background-color: #e4b400;
+    color:black;
+}
+main{
+    padding: 2rem;
+}
+.AlmacenProducto{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem; /*Espacio entre los productos*/
+    justify-content: center; 
+}
+.prodcuto{
+    background-color: #333;
+    border-radius: 5px;
+    padding: 1rem;
+    width: 255px;
+    text-align: center;
+}
+.prodcuto img{
+    width: 400px; /*El % es para que ocupe todo el ancho del contenedor*/
+    height: 200px; 
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+.Precio{
+    color:#e4b400;
+    margin:0.5rem 0;
+}
+.carrito{
+    background-color: #e4b400;
+    color: black;
+    padding: 0.5rem 0.5rem;
+    border-radius: 5px;
+    cursor: pointer; /*Esto es lo que hace que cambie el cursos y se ponga el del dedo*/
+}
+.carrito:hover{
+    background-color: #fff;
+    color: #000
+}
+footer{
+    background-color:#1b1b1b;
+    color: #e4b400;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 10rem;
+}
