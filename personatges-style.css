@@ -19,6 +19,7 @@ header{
     padding: 1rem;
     background-color: #000;
     position:sticky; /*Esto es lo que hace que el menu sea sticky*/
+    top:0;
 }
 
 header img{
